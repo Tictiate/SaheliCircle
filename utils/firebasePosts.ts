@@ -24,7 +24,7 @@ export async function addPost(userId: string, text: string): Promise<string> {
   }
 }
 // utils/firebasePosts.ts (can be in same file as above)
-import { query, collection, orderBy, getDocs, limit } from "firebase/firestore";
+import { query, orderBy, getDocs, limit } from "firebase/firestore";
 
 export async function getPosts(limitNumber = 20): Promise<Post[]> {
   try {
